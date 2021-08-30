@@ -16,4 +16,8 @@ describe('coinCounter', () => {
     test('should correct return 2 quarters, 1 dime, 1 nickel, 3 pennies if value is 34.68', () => {
       expect(coinCounter(34.68)).toEqual({quarters: 2, dimes:1, nickels:1, pennies:3});
     });
+    
+    test('should correct return 2 quarters, 1 dime, 1 nickel, 3 pennies if value is 34.68', () => {
+      expect(coinCounter(1.10)).toEqual({quarters: 0, dimes:1, nickels:0, pennies:0});
+    });
 });
